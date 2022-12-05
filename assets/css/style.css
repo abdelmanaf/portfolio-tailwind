@@ -5,3 +5,54 @@ body{
 section h1 {
   font-family: 'Permanent Marker', cursive;
 }
+
+.icon-box {
+  text-align: center;
+  background: rgba(3, 49, 66, 0.1);
+  padding: 80px 20px;
+  transition: all ease-in-out 0.3s;
+}
+
+.icon-box h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+/* .icon-box h4 a {
+  color: #fff;
+} */
+
+.icon-box:hover {
+  background: #54677f;
+  color: white;
+}
+.icon-box .icon {
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+  background: #b1d1e592;
+  border-radius: 5px;
+  transition: all 0.3s ease-out 0s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transform-style: preserve-3d;
+}
+.icon-box .icon i {
+  color: #fff;
+  font-size: 28px;
+}
+
+.icon-box .icon::before {
+  position: absolute;
+  content: "";
+  left: -8px;
+  top: -8px;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 5px;
+  transition: all 0.3s ease-out 0s;
+  transform: translateZ(-1px);
+}
